@@ -2,7 +2,6 @@ services:
   ocr-tesseract:
     build:
       context: .
-      dockerfile: Dockerfile
     volumes:
       - .:/app
     command: python3 app.py
