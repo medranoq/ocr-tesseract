@@ -2,6 +2,9 @@ services:
   ocr-tesseract:
     build:
       context: .
+    environment:
+      - DISPLAY=10.112.32.126:0
+      - QT_QPA_PLATFORM=xcb
     volumes:
       - .:/app
     command: python3 app.py
