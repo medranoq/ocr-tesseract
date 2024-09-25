@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este es un proyecto de OCR simple que utiliza Tesseract y OpenCV. El proyecto puede extraer texto de imágenes y archivos
+Este es un proyecto de OCR simple que utiliza **Tesseract** y **OpenCV**. El proyecto puede extraer texto de imágenes y archivos
 PDF.
 
 ## Estrucutra del proyecto
@@ -23,8 +23,8 @@ Archivo que contiene las dependencias del proyecto.
 
 Archivo que contiene las instrucciones para crear una imagen de Docker.
 
-* Utiliza una imagen de Python 3.12 en su version slim.
-* Instala el engine de OCR Tesseract y la libreria nativa de OpenCV.
+* Utiliza una imagen de **Python 3.12** en su version slim.
+* Instala el engine de **OCR Tesseract** y la libreria nativa de **OpenCV**.
 * Crea un directorio de trabajo en el contenedor llamado app, mismo en el que agrega el archivo `requirements.txt`.
 * Instala los requerimientos del proyecto utilizando el comando `pip3 install`.
 
