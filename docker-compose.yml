@@ -3,8 +3,10 @@ services:
     build:
       context: .
     environment:
-      - DISPLAY=10.112.32.126:0
+      - DISPLAY=10.112.32.143:0
       - QT_QPA_PLATFORM=xcb
+      - XDG_RUNTIME_DIR=/tmp/runtime-root
     volumes:
       - .:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
     command: python3 app.py
